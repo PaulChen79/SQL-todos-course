@@ -2,7 +2,7 @@
   "name": "mysql-todos",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
@@ -17,8 +17,11 @@
     "express-handlebars": "^6.0.5",
     "express-session": "^1.17.2",
     "method-override": "^3.0.0",
+    "mysql2": "^2.3.3",
     "nodemon": "^2.0.15",
     "passport": "^0.5.2",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.19.0",
+    "sequelize-cli": "^6.4.1"
   }
 }
