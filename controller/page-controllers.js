@@ -1,4 +1,5 @@
 const db = require('../models')
+const bcrypt = require('bcryptjs')
 const User = db.User
 
 const pageController = {
@@ -25,11 +26,8 @@ const pageController = {
     }
   },
   logout: (req, res) => {
-    req.logout(error => {
-      if (error) return console.log(error)
-      req.flash('success_msg', '成功登出！')
-      res.redirect('/')
-    })
+    req.logout()
+    res.redirect('/')
   }
 }
 
