@@ -20,4 +20,6 @@ router.post('/users/register', pageController.register)
 
 router.get('/users/logout', pageController.logout)
 
+router.use('/', (req, res) => res.redirect('/todos'))
+
 module.exports = router
